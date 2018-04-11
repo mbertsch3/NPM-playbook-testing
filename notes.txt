@@ -1,0 +1,59 @@
+NPM basics
+Advanced NPM -
+Publishing our own package
+
+
+1. git clone https://github.com/joeeames/trip-to-mars-typical
+2. CD trip-to-mars-typical
+3. NPM install - installs all dependencies in this package
+4. npm start - only works if start script exists.  it would be in package.json file
+5. npm test - only works if in package.json as script
+
+npm install -h --> shows help options for command
+npm help install --> opens browser page to npm install page
+npm help-search remove --> remove packages not in package.json shows all help topics
+npm help prune
+
+docs.npmjs.com/misc/config  --> short hand commands, etc
+
+npm init --> asks questions and creates package.json file
+npm init -y --> answers with default on all questions
+
+npm set init-author-name 'Marci Bertsch'--> sets default value
+npm get init-author-name --> shows what default for this install
+npm config delete init-author-name --> deletes this default
+these are stored in npm root config directory: .npmrc
+
+--save  or -S saves in package.json file in dependencies section
+
+npm i lodash -S --> i shortcut for install -S shortcut to save
+--dev or -D to save in devDependencies
+
+ls node_modules/ --> gives list of modules installed
+npm list --> gives list of installed and dependencies with tree indentation
+npm list --depth 1 --> goes 1 level deep
+npm list --depth 0 --> only what I installed
+npm list --global true -->list installed globally
+npm list --global true --depth 0 --> installed globally 1 level
+npm list --depth 0 --json
+gulp, grunt, karma must be installed globally with -g
+npm install gulp -g
+npm install gulp --save --> to save it to package folder
+npm uninstall removes from library --save to also remove from package.json or --dev to remove from devDependencies
+
+npm install underscore  --> only certain levels installed  1.8.3 = 1major version, 8minor version, 3patch
+
+npm install underscore@1.8.2
+or npm install underscore@1.8.x
+@1.7 or @1.x or @1 or @">1.1.0" or @">=1.1.0 <1.4.0"
+npm install underscore@1.8.3 --save --save-dev --save-exact
+cat package.json --> shows whats in package.json
+
+^ carot allows only major release match but highest minor version
+~ tilde allows only minor release match but highest patch version
+npm update --> gets the latest packages installed
+
+npm update --dev --> to only update devDependencies
+npm update --prod --> for production
+npm update -g updates --> all global libraries and packages
+
