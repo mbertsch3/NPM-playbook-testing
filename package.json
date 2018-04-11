@@ -1,0 +1,27 @@
+{
+  "name": "trip-to-mars",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "lodash": "^3.10.1"
+  },
+  "devDependencies": {
+    "jshint": "^2.8.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  },
+  "author": "Joe Eames",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joeeames/trip-to-mars-typical.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joeeames/trip-to-mars-typical/issues"
+  },
+  "homepage": "https://github.com/joeeames/trip-to-mars-typical#readme",
+  "description": ""
+}
